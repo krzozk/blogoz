@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Intro a JavaScript</title>
+		<meta charset="iso-88591" />
+		<script>
+			document.write("<h1>Hola mundo</h1>");
+			
+			
+			var nombre = "eduxy";
+			var suma = 0.1+0.2;
+			
+			document.write(nombre);
+			document.write(suma);
+			
+			var suma = function (a,b){
+				var resultado = a+b;
+				return resultado;
+			};
+			
+			function operacion(miFuncion,a,b){
+				return miFuncion(a,b);
+			}
+			
+			
+			
+			//var resultado = operacion(suma,5,7);
+			var resultado = operacion(function(a,b){
+				var resultado = a+b;
+				return resultado;
+			},5,7);
+			document.write(resultado);
+			
+			var persona = {
+				hablar:function(){
+					document.write(this.nombre);
+					console.log(this);
+				}
+			};
+			
+			persona.nombre = prompt("Ingresa tú nombre");
+			persona.telefono = prompt("Ingresa tú telefono");
+			persona.direccion = prompt("Ingresa tú domicilio");
+			document.writeln('<br>Nombre:'+persona.nombre);
+			document.writeln('<br>Tel&eacute;fono:'+persona.telefono);
+			document.writeln('<br>Direcci&oacute;n:'+persona.direccion);
+			document.writeln('<br>');
+			persona.hablar();
+			console.log(persona);
+			
+			
+		</script>
+	</head>
+	<body>
+		<!-- nada por ahora en el body -->
+	</body>
+</html>

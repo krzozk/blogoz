@@ -1,0 +1,77 @@
+<!DOCTYPE HTML />   
+<html lang="es" > 
+	  <head>     
+			 <!-- <meta charset="utf-8" /> -->
+			 <meta charset="iso-88591" />
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+			 <title>Mi p�gina</title> 
+			 <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+			 <link href="imagenes/chela.png" rel="shortcut icon" /><!-- 32x32 -->
+			 <link href="css/normalize.css" rel="stylesheet" />
+			 <link href="css/estilos.css" rel="stylesheet" />
+	  </head>  
+	  <body> 
+		<header>
+			<nav><!-- ol -->
+				<ul id="menu" >
+					<li>Inicio</li>
+					<li>Productos</li>
+					<li>Blog</li>
+					<li>Acerca</li>
+					<li>Contacto</li>
+				</ul>
+			</nav>
+		</header>
+		<section id="bienvenida" >
+			{frase} y {datos.nombre} {datos.apellido}
+		</section>
+		<section id="frases" >
+			<div class="frase" >
+				<img src="imagenes/chela.png" />
+				<p>Imaginar</p>
+			</div>
+			<div class="frase" >
+				<img src="imagenes/lambda.png" />
+				<p>Pensar</p>
+			</div>
+			<div class="frase" >
+				<img src="imagenes/python.png" />
+				<p>Crear</p>
+			</div>
+		</section>
+		<section>
+			<video controls="controls" poster="imagenes/logo-chrome.jpg" autoplay="" loop class="flexible" >
+				<source src="videos/chrome_japan.mp4" type="video/mp4" />
+				<source src="videos/chrome_japan.ogv" type="video/ogv" />
+				<source src="videos/chrome_japan.webm" type="video/webm" />
+				T� navegador no soporta video html5
+			</video>
+		</section>
+		<footer>
+			<div id="derechos">
+				<span>MiPagina</span> derechos reservados
+				<div id="redes" >
+					<div class="rs" >
+						<img src="imagenes/facebook.png" />
+	   				</div>
+					<div class="rs" >
+						<img src="imagenes/googleplus.png" />
+					</div>
+					<div class="rs" >
+						<img src="imagenes/twitter.png" />
+					</div>
+					<div class="rs" >
+						<img src="imagenes/youtube.png" />
+					</div>
+				</div>
+			</div>
+			<div id="suscripción">
+				<form action="/suscribir" method="post" >
+					<label for="email" >Suscribete:</label>
+					<input id="email" type="text" name="email" />
+					<input type="submit" value="Enviar" />
+				</form>
+			</div>
+		</footer>
+	  </body>
+</html>  

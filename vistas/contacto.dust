@@ -1,0 +1,67 @@
+<!DOCTYPE HTML />   
+<html lang="es" > 
+	  <head>     
+			 <!-- <meta charset="utf-8" /> -->
+			 <meta charset="iso-88591" />
+			 <title>Mi p�gina</title> 
+			 <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+			 <link href="imagenes/chela.png" rel="shortcut icon" /><!-- 32x32 -->
+			 <link href="css/normalize.css" rel="stylesheet" />
+			 <link href="css/estilos.css" rel="stylesheet" />
+	  </head>  
+	  <body> 
+		<header>
+			<nav><!-- ol -->
+				<ul id="menu" >
+					<li>Inicio</li>
+					<li>Productos</li>
+					<li>Blog</li>
+					<li>Acerca</li>
+					<li>Contacto</li>
+				</ul>
+			</nav>
+		</header>
+		
+			<form action="/postcontacto" method="post" >
+				<div class="contacto1"><label for="nombre" >Nombre:</label></div>
+				<div class="contacto"><input id="nombre" type="text" name="nombre" /></div>
+				<div class="contacto1"><label for="email" >Email:</label></div>
+				<div class="contacto"><input id="email" type="email" name="email" required /></div>
+				<div class="contacto1"><label for="url" >URL:</label></div>
+				<div class="contacto"><input id="url" type="url" name="url" pattern="http(s)?://[a-zA-Z]+.[a-zA-Z]+" /></div>
+				<div class="contacto1"><label for="edad" >Edad:</label></div>
+				<div class="contacto"><input id="edad" type="range" name="edad" min="18" max="90" step="5" /></div>
+				<div class="contacto1"><label for="dudas" >Dudas:</label></div>
+				<div class="contacto"><textarea id="dudas" name="dudas" required></textarea></div>
+				<div class="contacto1"></div>
+				<div class="contacto"><input type="submit" value="Enviar" /></div>
+			</form>
+		
+		<footer>
+			<div id="derechos">
+				<span>MiPagina</span> derechos reservados
+				<div id="redes" >
+					<div class="rs" >
+						<img src="imagenes/facebook.png" />
+	   				</div>
+					<div class="rs" >
+						<img src="imagenes/googleplus.png" />
+					</div>
+					<div class="rs" >
+						<img src="imagenes/twitter.png" />
+					</div>
+					<div class="rs" >
+						<img src="imagenes/youtube.png" />
+					</div>
+				</div>
+			</div>
+			<div id="suscripción">
+				<form action="/suscribir" method="post" >
+					<label for="email" >Suscribete:</label>
+					<input id="email" type="text" name="email" />
+					<input type="submit" value="Enviar" />
+				</form>
+			</div>
+		</footer>
+	  </body>
+</html>  
